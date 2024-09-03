@@ -1,0 +1,14 @@
+{
+    "name": "charts-react-express",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "concurrently \"npm run dev:front\" \"npm run dev:back\"",
+        "dev:back": "cd packages/backend && npm run dev",
+        "dev:front": "cd packages/frontend && npm run dev"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
