@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const API_URL = 'http://localhost:3210/'; // TODO: use env variables
+const API_URL = 'http://localhost:3210'; // TODO: use env variables
 
 // https://vitejs.dev/config/
 export default defineConfig({
