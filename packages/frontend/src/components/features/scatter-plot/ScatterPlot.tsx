@@ -7,7 +7,7 @@ import { DataApi } from '@services/api/data.api';
 import { ScatterPlotXYDropdowns, ScatterPlotXYDropdownsProps } from './ScatterPlotXYDropdowns';
 
 type DataObjectKey = keyof Omit<DataObject, 'DATE' | 'PIC'>;
-
+// TODO: rename this component on what it actually represents
 export function ScatterPlotChart() {
 
     const [data, setData] = useState<DataObject[]>([]);

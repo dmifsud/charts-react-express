@@ -1,5 +1,5 @@
 import { DataObject } from "@charts-react-express/backend/src/models/data.model";
-import { Dropdown, DropdownProps } from "@components/Dropdown";
+import { Dropdown, DropdownProps } from "@components/ui/Dropdown";
 import { useState, useEffect } from "react";
 
 export type ScatterPlotXYDropdownsProps = {
@@ -9,6 +9,7 @@ export type ScatterPlotXYDropdownsProps = {
 };
 
 export function ScatterPlotXYDropdowns(props: ScatterPlotXYDropdownsProps) {
+    // TODO: prop drilling could be reduced with the use of a state management library
     const { dataItems, onAxisSelections } = props;
     const [selectionX, setSelectionX] = useState<DropdownProps['list']>([]);
     const [selectionY, setSelectionY] = useState<DropdownProps['list']>([]);
