@@ -35,8 +35,8 @@ export function ScatterPlotXYDropdowns(props: ScatterPlotXYDropdownsProps) {
 
       return (
         <div className="flex gap-4">
-            <Dropdown preTitle="X " width={dropdownWidth} list={selectionX} selected={selectedX} onSelected={(selected) => setAxisSelections([selected, selectedY])}/>
-            <Dropdown preTitle="Y " width={dropdownWidth} list={selectionY} selected={selectedY} onSelected={(selected) => setAxisSelections([selectedX, selected])}/>
+            <Dropdown prefix="X " width={dropdownWidth} list={selectionX} selected={selectedX} onSelected={(selected) => setAxisSelections([selected, selectedY])}/>
+            <Dropdown prefix="Y " width={dropdownWidth} list={selectionY} selected={selectedY} onSelected={(selected) => setAxisSelections([selectedX, selected])}/>
         </div>
       )
 }

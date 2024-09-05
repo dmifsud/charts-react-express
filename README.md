@@ -37,6 +37,7 @@ npm run dev
 - Backend:
   - Use a module per feature approach for better scalability. Each module will have its own controllers, services, etc
   - Use a 3rd party library for Dependency injection such as Inversify.
+  - Unit tests
 - Frontend:
   - Use of a state management library such as Redux, Zustand, etc
     - Improve loading state management
@@ -45,3 +46,4 @@ npm run dev
   - Use a library such as axios to handle use of API
   - More research on how to utilise HighCharts' config effectively in React is required
   - Improve defensive programming and validation
+  - Unit tests

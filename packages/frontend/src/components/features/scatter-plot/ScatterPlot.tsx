@@ -15,9 +15,8 @@ export function ScatterPlotChart() {
     const [error, setError] = useState<string>();
     const [scatterPlotSelections, setScatterPlotSelections] = useState<ScatterPlotXYDropdownsProps['dataItems'] |  undefined>();
 
-  const [axis, setAxis] = useState<[string, string]>(['X', 'Y']);
+    const [axis, setAxis] = useState<[string, string]>(['X', 'Y']);
 
-//   const [selection, setSelection] = useState<DropdownProps['list']>([]);
     const [selectedX, selectedY] = axis;
     
     const series: Highcharts.Options['series'] = [
@@ -114,8 +113,6 @@ export function ScatterPlotChart() {
     fetchData();
 
   }, []);
-
-  
 
   return (
     <>
